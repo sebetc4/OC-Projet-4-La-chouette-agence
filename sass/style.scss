@@ -1,3 +1,7 @@
+@import "bootstrap.min";
+@import "et-line.min";
+@import "font-awesome.min";
+
 body {
     margin: 0;
     padding: 0;
@@ -133,7 +137,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(0, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 .d-bloc .a-btn:hover,

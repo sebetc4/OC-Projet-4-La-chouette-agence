@@ -1,6 +1,4 @@
-@import "bootstrap.min";
-@import "et-line.min";
-@import "font-awesome.min";
+@import "bootstrap";
 
 body {
     margin: 0;
@@ -1052,3 +1050,6 @@ h4 {
         text-align: center;
     }
 }
+
+@import "et-line";
+@import "font-awesome";

@@ -7,6 +7,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -681,8 +682,20 @@ p {
 }
 
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 650px;
     margin: auto auto auto auto;
+}
+
+.dark-background, .row-cta {
+    background-color: rgba(0, 0, 0, .7);
+    padding: 25px;
+}
+
+.row-cta {
+
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .h1 {
@@ -757,7 +770,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(165, 147, 99, 0.7);
+    background-color: rgba(0, 0, 0, .8);
     padding: 40px 40px 40px 40px;
 }
 
@@ -787,13 +800,18 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    border: none;
+    background: linear-gradient(34deg, rgba(189,81,110,1), rgba(243,151,108,1), rgba(248,222,128,1));
+    background-size: 200%;
+    background-position: left center;
     color: rgb(0, 0, 0)!important;
+    transition: all 0.5s;
 }
 
-.btn-atomic-tangerine:hover {
-    background: #c27956!important;
+.btn-atomic-tangerine:hover, .btn-atomic-tangerine:focus {
+    background-position: right center;
     color: rgb(0, 0, 0)!important;
+    transform: scale(1.08);
 }
 
 .ltc-white {

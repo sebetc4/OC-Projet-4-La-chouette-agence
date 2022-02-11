@@ -134,7 +134,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(0, 0, 0);
+    color: rgba(255, 255, 255, .6);
 }
 
 .d-bloc .a-btn:hover,
@@ -294,12 +294,46 @@ a:hover {
 }
 
 .navbar-brand {
+    position: relative;
     height: auto;
     padding: 3px 15px;
     font-size: 25px;
     font-weight: normal;
     font-weight: 600;
     line-height: 44px;
+}
+
+.navbar-nav__items{
+    margin: 0 10px;
+    transition: transform .4s ease;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-brand::before, .navbar-nav__items::before {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    right: 0; bottom: 0; left: 0;
+    background: linear-gradient(34deg, rgba(189,81,110,1) 0%, rgba(243,151,108,1) 50%, rgba(248,222,128,1) 100%);
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform .4s ease;
+}
+
+.navbar-nav__items::before {
+    bottom: 8px;
+}
+
+.navbar-brand:hover.navbar-brand::before, .navbar-nav__items:hover.navbar-nav__items::before, .navbar-brand:focus.navbar-brand::before, .navbar-nav__items:focus.navbar-nav__items::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar-brand:hover, .navbar-nav__items:hover, .navbar-brand:focus, .navbar-nav__items:focus {
+    transform: scale(1.08);
 }
 
 .navbar-brand img {
@@ -713,7 +747,8 @@ p {
 }
 
 .social {
-    max-width: 400px;
+    max-width: 500px;
+    padding: 15px 0;
     margin: auto auto auto auto;
 }
 
@@ -849,6 +884,85 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/image-de-presentation.webp");
+}
+
+.contact-link {
+    color: #F3976C!important;
+    display: block;
+}
+
+.contact-link:hover, .contact-link:focus {
+    transform: scale(1.08);
+    color: #f8de80!important;
+}
+
+.icon-social {
+    color: #000000!important;
+    border:  1px solid #FFFFFF;
+}
+
+
+ /* Ajouts */
+
+ .badge {
+	position: relative;
+    padding: 0;
+	width: 50px;
+	height: 50px;
+    background-color: transparent;
+	top: 0;
+	transition: all 0.2s ease;
+}
+
+.badge:hover, .badge:focus {
+		top: -10px;
+        transform: scale(1.06);
+	}
+
+.badge__circle {
+    width: 50px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+    
+.badge i {
+    margin-top: 8px;
+    font-size: 2em;
+}
+
+.badge__text {
+    position: absolute;
+    bottom: -14px;
+    padding: 3px 0;
+    border-radius: 4px;
+    width: 100px;
+    color: #fff !important;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27);
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to bottom right, #555 0%, #333 100%);
+}
+
+.pink {
+	color: #dc306f;
+}
+
+.snap {
+	color:  #4C5FD7;
+}
+
+.blue {
+    color: #259af3;
+}
+
+.blue-dark {
+    color: #1c68c5;
+}
+
+.icon-md {
+    display: none!important;
 }
 
 @media (max-width: 1024px) {
@@ -1052,6 +1166,28 @@ h4 {
         width: 180px;
         height: 320px;
     }
+
+
+    .badge__text {
+        display: none;
+    }
+
+    .badge__circle {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        background: #fff;
+        z-index: 10;
+        border-radius: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+    }
+
+    .badge:hover, .badge:focus {
+		top: 0px;
+        transform: scale(1.2);
+	}
 }
 
 @media (max-width: 400px) {
@@ -1066,3 +1202,4 @@ h4 {
         text-align: center;
     }
 }
+

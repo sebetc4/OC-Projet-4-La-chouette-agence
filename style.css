@@ -812,6 +812,7 @@ h4 {
 /* Modif taille des images */
 .portfolio-thumb {
     width: 100%;
+    height: auto;
     max-width: 320px;
     margin-bottom: 24px;
     margin-right: auto;

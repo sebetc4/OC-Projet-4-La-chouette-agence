@@ -303,6 +303,11 @@ a:hover {
     line-height: 44px;
 }
 
+.nav-barnd img {
+    width: 215px;
+    height: 40px 
+}
+
 .navbar-nav__items{
     margin: 0 10px;
     transition: transform .4s ease;

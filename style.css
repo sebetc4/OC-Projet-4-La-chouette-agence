@@ -545,6 +545,30 @@ button {
     box-shadow: none;
 }
 
+
+  /* Modification couleur de focus */
+
+  
+.form-control:valid {
+    border-color: #00c41a;
+    box-shadow: 0 0 1px #00c41a;
+  }
+
+  .form-control:invalid {
+    border-color: #f79c9c;
+    box-shadow: 0 0 1px #f79c9c;
+}
+
+.form-control:focus:invalid {
+        border-color: #f79c9c;
+        box-shadow: 0 0 1px #f79c9c;
+    }
+
+  .form-control:focus {
+    border-color: #f8de80;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(248, 222, 128, 1);
+}
+    
 .scrollToTop {
     position: relative;
     display: flex;
@@ -562,18 +586,19 @@ button {
 }
 
 .scrollToTop:hover {
-    border: 3px solid #bd516e;
+    border: 3px solid #ffffff;
     border-radius: 50%;
     background-color: black;
 }
 
 .scrollToTop i{
     display: block;
-    color: #f3976c;
+    color: #ffffff;
     transition: all .3s ease-in-out;
 }
 
 .scrollToTop:hover i{
+    color: #f3976c;
     transform: scale(1.3);
 }
 
@@ -1227,4 +1252,3 @@ h4 {
         text-align: center;
     }
 }
-

@@ -580,7 +580,7 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(248, 222, 128, 1)
     transition: all .3s ease-in-out;
 }
 
-.scrollToTop:hover {
+.scrollToTop:hover, .scrollToTop:focus {
     border: 3px solid #ffffff;
     border-radius: 50%;
     background-color: black;
@@ -592,7 +592,7 @@ box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(248, 222, 128, 1)
     transition: all .3s ease-in-out;
 }
 
-.scrollToTop:hover i{
+.scrollToTop:hover i, .scrollToTop:focus i{
     color: #f3976c;
     transform: scale(1.3);
 }

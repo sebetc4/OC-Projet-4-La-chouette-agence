@@ -1014,6 +1014,17 @@ h4 {
     display: none!important;
 }
 
+.quote-box {
+    float: none;
+    margin: 0 auto;
+    width: 550px;
+}
+
+q {
+    font-size: 20px;
+    font-style: italic;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;

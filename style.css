@@ -791,7 +791,7 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 26px;
     line-height: 1.4em;
 }
 
@@ -952,6 +952,9 @@ h4 {
 
 
  /* Ajouts */
+.subtitle {
+    font-size: 20px;
+}
 
  .badge {
 	position: relative;

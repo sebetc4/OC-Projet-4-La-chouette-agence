@@ -11,7 +11,6 @@ body {
 a,
 button {
     transition: all .3s ease-in-out;
-    outline: none!important;
 }
 
 a:hover {
@@ -386,6 +385,11 @@ a:hover {
     width: 26px;
 }
 
+
+.navbar-toggle:focus .icon-bar, .navbar-toggle:hover .icon-bar{
+    background-color: rgba(243,151,108,1) !important;
+}
+
 .nav-invert .navbar .nav {
     float: left;
 }
@@ -493,10 +497,6 @@ nav .caret {
 .btn-d:focus {
     color: #FFF;
     background: rgba(0, 0, 0, .3);
-}
-
-button {
-    outline: none!important;
 }
 
 .btn-rd {

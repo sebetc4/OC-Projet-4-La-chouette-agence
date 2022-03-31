@@ -336,6 +336,9 @@ a:hover {
 }
 
 .navbar-brand img {
+
+    width: 215px; 
+    height: 40px;
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
@@ -960,6 +963,11 @@ h4 {
 
 
  /* Ajouts */
+
+ .title-contact {
+padding-bottom: 20px;
+ }
+
 .subtitle {
     font-size: 20px;
 }
@@ -1083,10 +1091,6 @@ q {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -1095,8 +1099,6 @@ q {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
